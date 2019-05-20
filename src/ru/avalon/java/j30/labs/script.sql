@@ -60,4 +60,5 @@ values  ('#FFFFFF', 'milk', 10.0, 15.0),
 
 CREATE table Orders2Product (
 orders int references Orders(id),
-product int references Product(id));
+product int references Product(id),
+constraint pk_Orders2Product primary key (orders, product));
